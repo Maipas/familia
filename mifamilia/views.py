@@ -4,24 +4,24 @@ from django.template import Template, Context
 from datetime import datetime
 from django.shortcuts import render
 
-def saludo(request):
-    return HttpResponse('buenas')
+# def saludo(request):
+#     return HttpResponse('buenas')
 
-def index(request):
-    return render(request, 'index.html')
+# def index(request):
+#     return render(request, 'index.html')
 
-def fecha(request):
-    fecha=datetime.now().date()
-    mensaje= f'hoy es {fecha}'
-    return HttpResponse(mensaje)
+# def fecha(request):
+#     fecha=datetime.now().date()
+#     mensaje= f'hoy es {fecha}'
+#     return HttpResponse(mensaje)
 
-def plantilla(request):
-    context = {
-        'nombre': 'Mauro',
-        'apellido': 'Pasinato',
-        'fecha':datetime.now()
-    }
-    return render(request, 'template_1.html', context = context)
+# def plantilla(request):
+#     context = {
+#         'nombre': 'Mauro',
+#         'apellido': 'Pasinato',
+#         'fecha':datetime.now()
+#     }
+#     return render(request, 'index.html', context = context)
 
 # def plantilla(self):
 

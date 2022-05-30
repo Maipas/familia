@@ -17,14 +17,9 @@ from re import template
 from django.contrib import admin
 from django.urls import path, include
 
-from mifamilia.views import saludo, fecha, plantilla
-from family.views import family
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludo/', saludo, name = 'saludo'),
-    path('fecha/', fecha, name = 'fecha'),
-    path('plantilla/', plantilla, name = 'plantilla'),
     path('', include('family.urls')) #path('family/', include('family.urls')) TOMA TODAS LAS URLS  en la applicacion
 ]
