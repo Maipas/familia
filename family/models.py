@@ -4,8 +4,8 @@ from django.db import models
 class Family(models.Model):
     nombre = models.CharField(max_length=30)
     apellido = models.CharField(max_length=30)
-    nacimiento= models.FloatField()
-    edad = models.FloatField()
+    nacimiento= models.IntegerField()
+    edad = models.IntegerField()
     estado = models.CharField(max_length=30)
     parentesco = models.CharField(max_length=30)
     active = models.BooleanField(default=True)
